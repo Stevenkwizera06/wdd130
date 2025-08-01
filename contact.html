@@ -39,7 +39,7 @@
                         <h2>Get In Touch</h2>
                         <div class="contact-item">
                             <h3>Phone</h3>
-                            <p><strong>Reservations:</strong> 1-800-RAPIDS-1</p>
+                            <p><strong>Reservations:</strong> 1-800-RAPIDS-12</p>
                             <p><strong>Office:</strong> (555) 123-4567</p>
                         </div>
                         <div class="contact-item">
@@ -76,42 +76,19 @@
                             </div>
                             
                             <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="subject">Subject *</label>
-                                <select id="subject" name="subject" required>
-                                    <option value="">Select a subject</option>
-                                    <option value="booking">Trip Booking</option>
-                                    <option value="information">General Information</option>
-                                    <option value="group">Group/Corporate Events</option>
-                                    <option value="safety">Safety Questions</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="trip">Interested Trip (Optional)</label>
-                                <select id="trip" name="trip">
-                                    <option value="">Select a trip</option>
-                                    <option value="half-day">1/2 Day Raft Trip</option>
-                                    <option value="full-day">1 Day Raft Trip</option>
-                                    <option value="two-day">2 Day Raft Trip</option>
-                                    <option value="three-day">3 Day Raft Trip</option>
-                                    <option value="five-day">4 or 5 Day Raft Trip</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="participants">Number of Participants</label>
-                                <input type="number" id="participants" name="participants" min="1" max="20">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="preferred-date">Preferred Date</label>
-                                <input type="date" id="preferred-date" name="preferred-date">
+                                <label>Purpose of Message *</label>
+                                <div class="radio-group">
+                                    <input type="radio" id="general" name="purpose" value="general" required>
+                                    <label for="general">General Inquiry</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" id="reservation" name="purpose" value="reservation" required>
+                                    <label for="reservation">Reservation Question</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" id="suggestion" name="purpose" value="suggestion" required>
+                                    <label for="suggestion">Website Suggestion</label>
+                                </div>
                             </div>
                             
                             <div class="form-group">
@@ -121,7 +98,7 @@
                             
                             <div class="form-group checkbox-group">
                                 <input type="checkbox" id="newsletter" name="newsletter">
-                                <label for="newsletter">Subscribe to our newsletter for updates and special offers</label>
+                                <label for="newsletter">Please subscribe me to the monthly newsletter</label>
                             </div>
                             
                             <button type="submit" class="cta-button">Send Message</button>
@@ -131,34 +108,31 @@
             </div>
         </section>
 
-        <section class="faq-section">
+        <section class="team-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
-                <div class="faq-grid">
-                    <div class="faq-item">
-                        <h3>What should I wear for rafting?</h3>
-                        <p>Wear quick-dry clothing, water shoes with straps, and bring a change of clothes. We provide life jackets and helmets.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>Is rafting safe for children?</h3>
-                        <p>Yes! We offer family-friendly trips suitable for children 6 and older. All trips include safety equipment and certified guides.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>What if the weather is bad?</h3>
-                        <p>We monitor weather conditions and may reschedule trips for safety. Full refunds are provided for weather-related cancellations.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>Do I need experience to go rafting?</h3>
-                        <p>No experience needed! Our guides provide instruction and we offer trips for all skill levels, from beginners to experts.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>Can I bring my own camera?</h3>
-                        <p>Yes, but we recommend waterproof cameras or cases. We also provide professional photos of your adventure.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>What's included in the trip price?</h3>
-                        <p>All safety equipment, professional guides, transportation, meals (on longer trips), and photos are included in the price.</p>
-                    </div>
+                <h2>Meet Our Team</h2>
+                <div class="team-grid">
+                    <figure class="team-member">
+                        <img src="images/guide-1.jpg" alt="Sarah Johnson - Lead Guide" width="200">
+                        <figcaption>
+                            <h3>Sarah Johnson</h3>
+                            <p class="position">Lead Guide</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="team-member">
+                        <img src="images/guide-2.jpg" alt="Mike Chen - Safety Coordinator" width="200">
+                        <figcaption>
+                            <h3>Mike Chen</h3>
+                            <p class="position">Safety Coordinator</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="team-member">
+                        <img src="images/guide-3.jpg" alt="Emma Rodriguez - Customer Relations" width="200">
+                        <figcaption>
+                            <h3>Emma Rodriguez</h3>
+                            <p class="position">Customer Relations</p>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
@@ -171,7 +145,6 @@
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s150%20Park%20Row%2C%20New%20York%2C%20NY%2010007%2C%20USA!5e0!3m2!1sen!2sus!4v1640995200000!5m2!1sen!2sus" 
                         width="800" 
                         height="450" 
-                        style="border:0;" 
                         allowfullscreen="" 
                         loading="lazy" 
                         referrerpolicy="no-referrer-when-downgrade"
@@ -197,6 +170,7 @@
             <div class="footer-links">
                 <a href="site-plan-rafting.html">Site Plan</a>
                 <a href="contact.html">Contact Us</a>
+                <a href="contact-wireframe.html">Contact Wireframe</a>
             </div>
             <div class="social-media">
                 <a href="#" aria-label="Facebook">
