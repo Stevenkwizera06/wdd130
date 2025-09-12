@@ -3,32 +3,32 @@
 /* Navigation styling */
 nav {
   background-color: steelblue;
-  padding: 1rem;
+  padding: 10px;
 }
 
 nav a {
   color: white;
-  padding: 1rem;
+  padding: 10px;
   display: block;
 }
 
-/* Main content styling */
-main {
-  max-width: 840px;
-}
-
-/* H1 styling */
+/* Heading styling */
 h1 {
   color: steelblue;
 }
 
 /* Image styling */
 img {
-  width: 150px;
+  width: 200px;
   height: auto;
   border: 1px solid steelblue;
   padding: 2px;
   box-shadow: 0 0 30px gray;
+}
+
+/* Main content styling */
+main {
+  max-width: 840px;
 }
 
 /* Profile image in main */
