@@ -1,0 +1,30 @@
+<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="waterGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2E86AB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A23B72;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="100" fill="#f8f9fa" stroke="#2E86AB" stroke-width="2" rx="10"/>
+  
+  <!-- River/Waves -->
+  <path d="M 20 60 Q 50 50 80 60 Q 110 70 140 60 Q 170 50 180 60" 
+        stroke="url(#waterGradient)" stroke-width="3" fill="none"/>
+  <path d="M 20 70 Q 50 60 80 70 Q 110 80 140 70 Q 170 60 180 70" 
+        stroke="url(#waterGradient)" stroke-width="2" fill="none"/>
+  
+  <!-- Raft -->
+  <ellipse cx="100" cy="55" rx="25" ry="8" fill="#F18F01" stroke="#C73E1D" stroke-width="1"/>
+  <ellipse cx="100" cy="55" rx="20" ry="6" fill="#F18F01" opacity="0.8"/>
+  
+  <!-- Paddles -->
+  <line x1="85" y1="45" x2="85" y2="65" stroke="#C73E1D" stroke-width="2"/>
+  <line x1="115" y1="45" x2="115" y2="65" stroke="#C73E1D" stroke-width="2"/>
+  
+  <!-- Text -->
+  <text x="100" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2E86AB">
+    Rapids Adventure Co.
+  </text>
+</svg> 

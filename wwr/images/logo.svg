@@ -1,6 +1,0 @@
-<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="100" height="100" fill="#1e3a8a"/>
-<path d="M20 20L80 20L80 30L20 30Z" fill="#f59e0b"/>
-<path d="M25 35L50 50L75 35L50 20Z" fill="#f59e0b"/>
-<text x="50" y="80" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">RAPIDS</text>
-</svg>
