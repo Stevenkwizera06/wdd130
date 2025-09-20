@@ -158,3 +158,124 @@ footer {
 .socialmedia img:hover {
   transform: scale(1.2);
 }
+
+/* Home page specific styles */
+.features {
+  background: linear-gradient(135deg, var(--accent2-color) 0%, #e5e7eb 100%);
+  margin: 40px 16px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.feature-item {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.feature-item h3 {
+  color: var(--primary-color);
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  font-family: var(--heading-font);
+}
+
+.feature-item p {
+  color: var(--accent1-color);
+  line-height: 1.6;
+}
+
+.cta {
+  background: var(--primary-color);
+  color: white;
+  margin: 40px 16px;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.cta h2 {
+  color: white;
+  font-size: 2.2em;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+  min-width: 150px;
+}
+
+.btn-primary {
+  background-color: var(--secondary-color);
+  color: white;
+  border: 2px solid var(--secondary-color);
+}
+
+.btn-primary:hover {
+  background-color: #d97706;
+  border-color: #d97706;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-secondary:hover {
+  background-color: white;
+  color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+/* Hero section variations for home page */
+.hero h1 {
+  background: linear-gradient(135deg, var(--accent1-color) 0%, var(--primary-color) 100%);
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.hero article {
+  background: linear-gradient(135deg, var(--accent1-color) 0%, var(--primary-color) 100%);
+  border-radius: 15px;
+  margin: 20px;
+  padding: 25px;
+}
