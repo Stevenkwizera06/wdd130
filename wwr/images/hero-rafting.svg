@@ -1,0 +1,13 @@
+<svg width="840" height="400" viewBox="0 0 840 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="840" height="400" fill="#87CEEB"/>
+<path d="M0 300L100 280L200 290L300 270L400 285L500 275L600 280L700 270L800 275L840 270L840 400L0 400Z" fill="#4682B4"/>
+<path d="M50 320L150 300L250 310L350 290L450 305L550 295L650 300L750 290L790 295" stroke="#87CEEB" stroke-width="3" fill="none"/>
+<circle cx="200" cy="250" r="8" fill="#8B4513"/>
+<circle cx="300" cy="240" r="8" fill="#8B4513"/>
+<circle cx="400" cy="250" r="8" fill="#8B4513"/>
+<circle cx="500" cy="245" r="8" fill="#8B4513"/>
+<circle cx="600" cy="250" r="8" fill="#8B4513"/>
+<circle cx="700" cy="240" r="8" fill="#8B4513"/>
+<rect x="150" y="200" width="500" height="60" rx="30" fill="#DC143C"/>
+<text x="400" y="240" font-family="Arial" font-size="24" font-weight="bold" fill="white" text-anchor="middle">White Water Rafting Adventure</text>
+</svg>

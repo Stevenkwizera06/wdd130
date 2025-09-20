@@ -1,0 +1,160 @@
+/* CSS Variables */
+:root {
+  --primary-color: #1e3a8a; /* Deep blue */
+  --secondary-color: #f59e0b; /* Amber */
+  --accent1-color: #1f2937; /* Dark gray */
+  --accent2-color: #f3f4f6; /* Light gray */
+  --heading-font: "Times New Roman", "Georgia", serif;
+  --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* Reset CSS box-model properties */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+
+/* Page width and centering */
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* Header styling */
+header {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 20px;
+}
+
+header img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Navigation styling */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: var(--accent2-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+}
+
+/* Heading styling */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* Basic element styling */
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* Hero section styling */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.9;
+  background-color: var(--accent1-color);
+  color: #fff;
+  font-size: 2.5em;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: var(--accent1-color);
+  color: #fff;
+  padding: 20px;
+  opacity: 0.9;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 15px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+}
+
+/* Section styling */
+section {
+  margin: 40px 16px;
+  padding: 20px;
+  background-color: var(--accent2-color);
+  border-radius: 8px;
+}
+
+section h2 {
+  margin-bottom: 15px;
+  font-size: 2em;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Footer styling */
+footer {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Social media links */
+.socialmedia {
+  display: flex;
+  gap: 15px;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+.socialmedia img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.socialmedia img:hover {
+  transform: scale(1.2);
+}
