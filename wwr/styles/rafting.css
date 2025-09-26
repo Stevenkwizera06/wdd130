@@ -32,19 +32,28 @@ header {
   background-color: var(--primary-color);
   color: var(--accent2-color);
   padding: 20px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 20px;
 }
 
 header img {
   width: 100px;
   height: auto;
-  margin-bottom: 10px;
 }
 
 /* Navigation styling */
+nav {
+  justify-self: end;
+}
+
 nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
@@ -119,7 +128,7 @@ section {
   border-radius: 8px;
 }
 
-section h2 {
+section h1, section h2 {
   margin-bottom: 15px;
   font-size: 2em;
   text-align: center;
@@ -127,6 +136,93 @@ section h2 {
   color: #fff;
   padding: 10px;
   border-radius: 5px;
+}
+
+/* White Water Rafting Section */
+.white-water-section {
+  background-color: white;
+}
+
+.white-water-section .content-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.white-water-section .text-content {
+  flex: 2;
+}
+
+.white-water-section .image-content {
+  flex: 1;
+  text-align: center;
+}
+
+.white-water-section .image-content img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* History Section */
+.history-section {
+  background-color: white;
+}
+
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.history-text {
+  padding: 10px;
+}
+
+.history-image {
+  text-align: center;
+}
+
+.history-image img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  border: 3px solid var(--primary-color);
+}
+
+/* Adventure Section */
+.adventure-section {
+  background-color: white;
+}
+
+.adventure-gallery {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.adventure-gallery figure {
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+  margin: 0;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid var(--secondary-color);
+}
+
+.adventure-gallery figcaption {
+  margin-top: 8px;
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 0.9em;
 }
 
 /* Footer styling */
@@ -137,6 +233,11 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+footer p {
+  margin: 0;
+  flex: 1;
 }
 
 /* Social media links */
@@ -278,4 +379,66 @@ footer {
   border-radius: 15px;
   margin: 20px;
   padding: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  header, main, footer {
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  .white-water-section .content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .history-content {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .history-image {
+    order: -1;
+  }
+  
+  .adventure-gallery {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .adventure-gallery figure {
+    min-width: auto;
+  }
+  
+  .adventure-gallery img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  nav {
+    justify-self: center;
+  }
+  
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  footer {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .socialmedia {
+    justify-content: center;
+  }
 }
