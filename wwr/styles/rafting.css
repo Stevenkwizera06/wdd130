@@ -1,0 +1,291 @@
+/* ===========================
+   CSS Variables / Design Tokens
+   =========================== */
+:root {
+  --primary-color: #0d3b5e;       /* deep ocean blue */
+  --secondary-color: #fca311;     /* vibrant, adventurous orange */
+  --accent1-color: #e5e5e5;       /* light cool gray */
+  --accent2-color: #14213d;       /* very dark navy */
+  --heading-font: 'Merriweather', "Times New Roman", serif;
+  --body-font: 'Roboto', "Arial", Helvetica, sans-serif;
+}
+
+/* ===========================
+   CSS Reset / Box Model
+   =========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===========================
+   Body Base Styles
+   =========================== */
+body {
+  font-family: var(--body-font);
+  color: var(--accent2-color);
+  background-color: var(--accent1-color);
+  line-height: 1.6;
+}
+
+/* ===========================
+   Layout: Constrain width & center
+   =========================== */
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* ===========================
+   Header
+   =========================== */
+header {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 35px;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+}
+
+header img {
+  width: 140px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+header img:hover {
+  transform: scale(1.05);
+}
+
+/* ===========================
+   Navigation
+   =========================== */
+header nav {
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+header nav ul li a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.05rem;
+  padding: 5px 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--secondary-color);
+  transition: width 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+header nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* ===========================
+   General spacing defaults (per instructions)
+   =========================== */
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* Override default margins to match layout tightly */
+header nav, footer nav {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===========================
+   Headings
+   =========================== */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+  border-bottom: 3px solid var(--secondary-color);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* ===========================
+   Section styles
+   =========================== */
+section {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 35px 45px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  margin: 30px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+section p {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #444;
+  margin: 0;   /* overrides the generic 'p' margin */
+  padding: 0;  /* overrides generic 'p' padding */
+}
+
+/* ===========================
+   Hero Div
+   =========================== */
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+  margin: 0 0 35px 0;
+}
+
+.hero > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.6s ease;
+}
+
+.hero:hover > img {
+  transform: scale(1.03);
+}
+
+/* ===========================
+   Hero h1 Overlay
+   =========================== */
+h1 {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  text-align: center;
+  background: rgba(13, 59, 94, 0.75); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  font-size: 3rem;
+  padding: 20px 0;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  margin: 0;
+  font-weight: 900;
+}
+
+/* ===========================
+   Hero Article Overlay
+   =========================== */
+.hero article {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  width: 65%;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-left: 6px solid var(--secondary-color);
+  border-radius: 0 10px 10px 0;
+  padding: 20px 25px;
+  margin: 0;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+.hero article p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--accent2-color);
+}
+
+/* ===========================
+   Article image (float right)
+   =========================== */
+.hero article img {
+  float: right;
+  width: 125px;
+  height: auto;
+  margin: 0 0 10px 15px;
+  border-radius: 8px;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* ===========================
+   Footer
+   =========================== */
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px 30px;
+  border-radius: 12px 12px 0 0;
+  margin-top: 40px;
+  box-shadow: 0 -4px 15px rgba(0,0,0,0.1);
+}
+
+footer p {
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+}
+
+/* ===========================
+   Social Media Nav
+   =========================== */
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+.socialmedia img {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: #fff; /* Ensure contrast/square shape */
+  padding: 4px;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.socialmedia a:hover img {
+  transform: translateY(-8px) scale(1.1);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.4);
+  background-color: var(--secondary-color);
+}
