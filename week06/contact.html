@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Exciting Expeditions Rafting</title>
+  <meta name="description" content="Get in touch with Exciting Expeditions for reservations, general inquiries, or feedback. We are here to help you plan your next white water rafting adventure.">
+  <meta name="author" content="Student Name">
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Exciting Expeditions Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="contact-hero">
+      <h1>White Water Rafting Company</h1>
+      <div class="info-details">
+        <p>123 Main River Street, Kolob, California</p>
+        <p>+1 999 999 9999</p>
+        <p>info@whitewater.com</p>
+      </div>
+    </section>
+
+    <div class="contact-container">
+      <section class="map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.01929788647!2d-122.41941548468205!3d37.7749292797592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c733f5b73%3A0xa6f0a35e26f63f5d!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1617151000000!5m2!1sen!2sus" 
+          width="600" height="450" loading="lazy"></iframe>
+      </section>
+      
+      <section class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="user_name">Name:</label>
+            <input type="text" id="user_name" name="user_name" placeholder="Your Name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="user_email">Email:</label>
+            <input type="email" id="user_email" name="user_email" placeholder="Your Email" required>
+          </div>
+          
+          <fieldset>
+            <legend>Message Purpose</legend>
+            <div class="radio-group">
+              <input type="radio" id="general_inquiry" name="purpose" value="general_inquiry" checked>
+              <label for="general_inquiry">General Inquiry</label>
+            </div>
+            <div class="radio-group">
+              <input type="radio" id="reservation_question" name="purpose" value="reservation_question">
+              <label for="reservation_question">Reservation Question</label>
+            </div>
+            <div class="radio-group">
+              <input type="radio" id="website_suggestion" name="purpose" value="website_suggestion">
+              <label for="website_suggestion">Website Suggestion</label>
+            </div>
+          </fieldset>
+          
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Type here..." required></textarea>
+          </div>
+          
+          <div class="checkbox-group">
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+            <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+          </div>
+          
+          <button type="submit">Get in Touch!</button>
+        </form>
+      </section>
+    </div>
+    
+    <section class="employees">
+      <h2>We Are Here to Serve You</h2>
+      <div class="employee-grid">
+        <figure>
+          <img src="https://i.pravatar.cc/150?u=guide1" alt="John Doe - Lead Guide">
+          <figcaption>John Doe - Lead Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="https://i.pravatar.cc/150?u=coordinator" alt="Jane Smith - Adventure Coordinator">
+          <figcaption>Jane Smith - Adventure Coordinator</figcaption>
+        </figure>
+        <figure>
+          <img src="https://i.pravatar.cc/150?u=safety" alt="Bob Johnson - Safety Instructor">
+          <figcaption>Bob Johnson - Safety Instructor</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2026 Exciting Expeditions | Student Name</p>
+    <nav class="socialmedia">
+      <a href="https://facebook.com">
+        <img src="images/facebook.png" alt="Facebook Icon">
+      </a>
+      <a href="https://linkedin.com">
+        <img src="images/linkedin.png" alt="LinkedIn Icon">
+      </a>
+      <a href="https://instagram.com">
+        <img src="images/instagram.png" alt="Instagram Icon">
+      </a>
+    </nav>
+  </footer>
+</body>
+</html>
